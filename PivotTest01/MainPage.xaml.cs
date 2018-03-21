@@ -89,68 +89,56 @@ namespace PivotTest01
             }
         } // End Func
 
-
+        // Adds the value of a torch to total hamlet spendings (75)
         private void btn7_Click(object sender, RoutedEventArgs e)
         {
-            AddNumberToResult(7);
+            AddNumberToResult(75);
         }
 
-
+        // Adds the value of food (75)
         private void btn8_Click(object sender, RoutedEventArgs e)
         {
-            AddNumberToResult(8);
+            AddNumberToResult(75);
         }
-
+        
+        // Adds the value of bandages (150)
         private void btn9_Click(object sender, RoutedEventArgs e)
         {
-            AddNumberToResult(9);
+            AddNumberToResult(150);
         }
 
 
-        private void btnDiv_Click(object sender, RoutedEventArgs e)
-        {
-            AddOperationToResult(Operation.DIV);
-        }
-
+        // Adds the value of anti venom (150)
         private void btn4_Click(object sender, RoutedEventArgs e)
         {
-            AddNumberToResult(4);
+            AddNumberToResult(150);
         }
 
-
+        // Adds the value of Medicinal Herbs (200)
         private void btn5_Click(object sender, RoutedEventArgs e)
         {
-            AddNumberToResult(5);
+            AddNumberToResult(200);
         }
 
+        // Adds the value of Skeleton Keys (200)
         private void btn6_Click(object sender, RoutedEventArgs e)
         {
-            AddNumberToResult(6);
+            AddNumberToResult(200);
         }
 
-        private void btnTimes_Click(object sender, RoutedEventArgs e)
-        {
-            AddOperationToResult(Operation.TIMES);
-        }
+       
 
-
+        // Adds the value of Holy Water (150)
         private void btn1_Click(object sender, RoutedEventArgs e)
         {
-            AddNumberToResult(1);
+            AddNumberToResult(150);
         }
 
+        // Add the value of Shovels (250)
         private void btn2_Click(object sender, RoutedEventArgs e)
         {
-            AddNumberToResult(2);
+            AddNumberToResult(250);
         }
-
-
-
-        private void btn3_Click(object sender, RoutedEventArgs e)
-        {
-            AddNumberToResult(3);
-        }
-
 
 
         private void btnMinus_Click(object sender, RoutedEventArgs e)
@@ -268,11 +256,6 @@ namespace PivotTest01
         }
 
         #endregion Equal
-
-        private void btn0_Click(object sender, RoutedEventArgs e)
-        {
-            AddNumberToResult(0);
-        }
 
         private void btnClear_Click(object sender, RoutedEventArgs e)
         {
