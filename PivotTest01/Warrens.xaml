@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="PivotTest01.Warrens"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PivotTest01"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,62,0,0" TextWrapping="Wrap" Text="Warrens Test" VerticalAlignment="Top" RenderTransformOrigin="0.137,0.658" Height="97" Width="340"/>
+        <Button  Content="Back" Click="Button_Click" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.782,-0.793"/>
+        
+
+    </Grid>
+</Page>
