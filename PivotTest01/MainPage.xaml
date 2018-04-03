@@ -10,15 +10,62 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Pivot Title="Darkest Dungeon" Margin="0,-4,0,0">
             <PivotItem Header="Expedition Guide">
-                <Button Click="Button_Click" HorizontalAlignment="Left" Margin="21.225,35.117,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.121,-2.807" Height="54.787" UseLayoutRounding="False" Width="124.332" d:LayoutRounding="Auto">
-                    <!-- Testing for placing image inside button -->
-                    <Image Source="Assets/StoreLogo.png" Stretch="UniformToFill"/>
-                    <Button.RenderTransform>
-                        <CompositeTransform Rotation="0.194"/>
-                    </Button.RenderTransform>
-                 </Button>
-                
-                
+                <StackPanel Margin="5">
+                    <!-- Button for the cove -->
+                    <Button Click="Button_Click" HorizontalAlignment="Left" Margin="1.307,34.985,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.121,-2.807" Height="65.328" UseLayoutRounding="False" Width="155.085" d:LayoutRounding="Auto">
+                        <Button.RenderTransform>
+                            <CompositeTransform Rotation="0.194"/>
+                        </Button.RenderTransform>
+                        <Image Source="Assets/Cove.png" Stretch="UniformToFill" Margin="-10,-6,-9.956,-5.672"/>
+                    </Button>
+
+                    <!-- Ancestor qutoe for the cove -->
+                    <TextBlock> <Italic><Bold Foreground="#FFEE0F0F">"The smell of rotting fish is almost unbearable..."</Bold></Italic></TextBlock>
+
+
+                    <!-- Button for the ruins -->
+                    <Button Click="Button_Click2" HorizontalAlignment="Left" VerticalAlignment="Stretch" Height="49" Width="155" RenderTransformOrigin="0.468,-0.483" >
+                        <Image Source="Assets/Ruins.png" Stretch="UniformToFill" Margin="-10,-6,-9.956,-5.672"/>
+                    </Button>
+
+                    <!-- Ancestor qutoe for the Ruins -->
+                    <TextBlock ><Italic><Bold Foreground="#FFEE0F0F">"Pace out the halls of your lineage, once familiar, </Bold></Italic></TextBlock>
+                    <TextBlock ><Italic><Bold Foreground="#FFEE0F0F"> now foreign"</Bold></Italic></TextBlock>
+
+                    <!-- Button for the weald -->
+                    <Button  Click="Button_Click3" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="53" RenderTransformOrigin="0.498,-0.855" Width="155" >
+                        <Image Source="Assets/Weald.png" Stretch="UniformToFill" Margin="-10,-6,-9.956,-5.672"/>
+                        
+                    </Button>
+
+                    <!-- Ancestor qutoe for the Weald -->
+                    <TextBlock> <Italic><Bold Foreground="#FFEE0F0F">"There is method in the wild corruption here. It bears a </Bold></Italic></TextBlock>
+                    <TextBlock> <Italic><Bold Foreground="#FFEE0F0F">form both wretched and malevolent" </Bold></Italic></TextBlock>
+
+
+                    <!-- Button for the warrens -->
+                    <Button Click="Button_Click4" HorizontalAlignment="Left" VerticalAlignment="Stretch" Height="51" Width="155" >
+                        <Image Source="Assets/Warrens.png" Stretch="UniformToFill" Margin="-10,-6,-9.956,-5.672"/>
+                    </Button>
+
+                    <!-- Ancestor qutoe for the Warrens -->
+                    <TextBlock> <Italic><Bold Foreground="#FFEE0F0F">"They breed quickly down there in the dark, but perhaps </Bold></Italic></TextBlock>
+                    <TextBlock> <Italic><Bold Foreground="#FFEE0F0F">we can slay them even faster."</Bold></Italic></TextBlock>
+
+                    <!-- Button for the darkest dungeon -->
+                    <Button Click="Button_Click5" HorizontalAlignment="Left" VerticalAlignment="Stretch" Height="65" Width="326" >
+                        <Image Source="Assets/DarkestDungeon.png" Stretch="UniformToFill" Margin="-10,-6,-9.956,-5.672"/>
+                    </Button>
+
+                    <!-- Ancestor qutoe for the Darkest Dungeon -->
+                    <TextBlock> <Italic><Bold FontFamily="Tempus Sans ITC" Foreground="#FFEE0F0F">"Once again, the stars are right and the manor sits at</Bold></Italic></TextBlock>
+                    <TextBlock> <Italic><Bold FontFamily="Tempus Sans ITC" Foreground="#FFEE0F0F">the very epicenter of cosmic unrest. Cultists rally to their</Bold></Italic></TextBlock>
+                    <TextBlock> <Italic><Bold FontFamily="Tempus Sans ITC" Foreground="#FFEE0F0F">twisted idols and great gongs sound in anticipation of </Bold></Italic></TextBlock>
+                    <TextBlock> <Italic><Bold FontFamily="Tempus Sans ITC" Foreground="#FFEE0F0F">the coming sacrifices.</Bold></Italic></TextBlock>
+                    <TextBlock> <Italic><Bold FontFamily="Tempus Sans ITC" Foreground="#FFEE0F0F">Far below, life-laden shadows pulse to the unrelenting</Bold></Italic></TextBlock>
+                    <TextBlock> <Italic><Bold FontFamily="Tempus Sans ITC" Foreground="#FFEE0F0F">rhythm of a beating heart."</Bold></Italic></TextBlock>
+                </StackPanel>
+
             </PivotItem>
             <PivotItem Header="Hamlet Profit">
                 <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
