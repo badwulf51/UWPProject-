@@ -7,9 +7,26 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,62,0,0" TextWrapping="Wrap" Text="This is a very long tier string test that is used to fill in data to the textblock, it is an unfinished test" VerticalAlignment="Top" RenderTransformOrigin="0.137,0.658" Height="97" Width="340"/>
+   <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RequestedTheme="Dark">
 
 
+
+        <Button  Content="Back" Click="Button_Click" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.782,-0.793"/>
+
+        <TextBlock Margin="62,58,12,670" FontSize="10">
+    <Run Text="The Cove is the second to last dungeon that can be explored. It is a water-logged." />
+    <LineBreak />
+    <Run Text="nightmare filled with pelagic horrors, once used by the Ancestor for unsavory" />
+    <LineBreak />
+    <Run Text="deliveries - and unspeakable pacts." />
+        </TextBlock>
+
+        <TextBlock Margin="62,113,12,615" FontSize="10">
+    <Run Text="Weakness: Bleed and blight, DOTS damage" Foreground="#FF11C711" />
+    <LineBreak />
+    <Run Text="Beware: Fishmen seem weak, but there swords draw visceral blood!" Foreground="#FFD60E0E" />
+    <LineBreak />
+    <Run Text="Allies: Plague Doctor, Bounty Hunter, Occultist, Arbalest " />
+        </TextBlock>
     </Grid>
 </Page>
