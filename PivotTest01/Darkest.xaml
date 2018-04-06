@@ -7,9 +7,27 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,62,0,0" TextWrapping="Wrap" Text="Darkest Test" VerticalAlignment="Top" RenderTransformOrigin="0.137,0.658" Height="97" Width="340"/>
-        <Button  Content="Back" Click="Button_Click" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.782,-0.793"/>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RequestedTheme="Dark">
+
+
+
+        <Button  Content="Back" Click="Button_Click" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.782,-0.793"/>
+
+        <TextBlock Margin="62,42,12,686" FontSize="10">
+    <Run Text="The Darkest Dungeon is a hellish pit filled with eldritch horrors, and those who" />
+    <LineBreak />
+    <Run Text="worship them, that goes all the way down into the Heart of the World itself." />
+    <LineBreak />
+    <Run Text="To beat the game, you need to complete 4 quests in this location." />
+        </TextBlock>
+
+        <TextBlock Margin="59,82,15,646" FontSize="10">
+    <Run Text="Weakness: A strong mind, will power that exceeds mortal men." Foreground="#FF11C711" />
+    <LineBreak />
+    <Run Text="Beware: All your skills from the previous areas will be tested." Foreground="#FFD60E0E" />
+    <LineBreak />
+    <Run Text="Allies: Crusader, Hound Master, Occultist, Grave Robber " />
+        </TextBlock>
 
     </Grid>
 </Page>
