@@ -7,11 +7,26 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,62,0,0" TextWrapping="Wrap" Text="weald Test" VerticalAlignment="Top" RenderTransformOrigin="0.137,0.658" Height="97" Width="340"/>
-        <Button  Content="Back" Click="Button_Click" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.782,-0.793"/>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RequestedTheme="Dark">
 
 
+
+        <Button  Content="Back" Click="Button_Click" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.782,-0.793"/>
+
+        <TextBlock Margin="62,58,12,670" FontSize="10">
+    <Run Text="The Weald is the second dungeon that can be explored. It is a sprawling forest" />
+    <LineBreak />
+    <Run Text="whose rotted boughs host a hideous kind of fungi. The only roads to the Hamlet" />
+    <LineBreak />
+    <Run Text="pass through the diseased wood, making it an important area to cleanse." />
+        </TextBlock>
+
+        <TextBlock Margin="62,113,12,615" FontSize="10">
+    <Run Text="Weakness: Stress healers such as the jester make folly of this area!" Foreground="#FF11C711" />
+    <LineBreak />
+    <Run Text="Beware: Massive orges lurk on longer dungeons, there power is hainous!" Foreground="#FFD60E0E" />
+    <LineBreak />
+    <Run Text="Allies: Jester, Bounty Hunter, Vestal, Highwayman " />
+        </TextBlock>
     </Grid>
 </Page>
