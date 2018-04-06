@@ -7,10 +7,29 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,62,0,0" TextWrapping="Wrap" Text="Warrens Test" VerticalAlignment="Top" RenderTransformOrigin="0.137,0.658" Height="97" Width="340"/>
-        <Button  Content="Back" Click="Button_Click" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.782,-0.793"/>
-        
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RequestedTheme="Dark">
+
+
+
+        <Button  Content="Back" Click="Button_Click" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.782,-0.793"/>
+
+        <TextBlock Margin="62,58,12,655" FontSize="10">
+    <Run Text="The Warrens is the third dungeon that can be explored. An incredibly ancient system of aqueducts and tunnels built " />
+    <LineBreak />
+    <Run Text="system of aqueducts and tunnels built for unknown purpose, it is now a corpse-choked cesspit that houses the ravenous, disease-ridden beast-men known " />
+    <LineBreak />
+    <Run Text="choked cesspit that houses the ravenous, disease-ridden beast-men known " />
+     <LineBreak />
+     <Run Text="as the swine folk." />
+        </TextBlock>
+
+        <TextBlock Margin="62,113,12,615" FontSize="10">
+    <Run Text="Weakness: Bleed damage, beast hating party memebers" Foreground="#FF11C711" />
+    <LineBreak />
+    <Run Text="Beware: Disease lurks around every corner of the warrens! " Foreground="#FFD60E0E" />
+    <LineBreak />
+    <Run Text="Allies: Flaggelent, Hellion, Occultist, Jester " />
+        </TextBlock>
 
     </Grid>
 </Page>
