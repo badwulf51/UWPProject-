@@ -7,9 +7,30 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,62,0,0" TextWrapping="Wrap" Text="Ruins Test" VerticalAlignment="Top" RenderTransformOrigin="0.137,0.658" Height="97" Width="340"/>
-        <Button  Content="Back" Click="Button_Click" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.782,-0.793"/>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RequestedTheme="Dark">
+
+
+
+        <Button  Content="Back" Click="Button_Click" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.782,-0.793"/>
+
+        <TextBlock Margin="62,58,12,658" FontSize="10">
+    <Run Text="The Ruins is the first dungeon that can be explored. The former halls and seat of" />
+    <LineBreak />
+    <Run Text="the Ancestor's power, the Ruins are now a black, shifting maze of corridors firmly" />
+    <LineBreak />
+    <Run Text="under the control of the Necromancers and their continuously expanding" />
+    <LineBreak />
+    <Run Text="undead army." />
+        </TextBlock>
+
+        <TextBlock Margin="62,113,12,615" FontSize="10">
+    <Run Text="Weakness: Blight will turn the bones of the undead to ash" Foreground="#FF11C711" />
+    <LineBreak />
+    <Run Text="Beware: Do not try and make the undead bleed, blood does not course in them." Foreground="#FFD60E0E" />
+    <LineBreak />
+    <Run Text="Allies: Crusader, Vestal, Plague Doctor, Bounty Hunter " />
+        </TextBlock>
+
 
 
 
