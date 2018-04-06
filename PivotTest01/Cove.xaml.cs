@@ -26,5 +26,12 @@ namespace PivotTest01
         {
             this.InitializeComponent();
         }
+        
+        // Button click that brings the user back to the main page
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage));
+        }
+
     }
 }
