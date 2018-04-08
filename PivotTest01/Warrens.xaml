@@ -30,6 +30,81 @@
     <LineBreak />
     <Run Text="Allies: Flaggelent, Hellion, Occultist, Jester " />
         </TextBlock>
+        
+         <!-- horizontal lines for expedition guide -->
+        <Line
+     X1="10" Y1="60"
+     X2="370" Y2="60"
+     Stroke="Red"
+     StrokeThickness="1" Margin="52,304,-52,-304"/>
+
+        <Line
+     X1="10" Y1="60"
+     X2="370" Y2="60"
+     Stroke="Red"
+     StrokeThickness="1" Margin="52,359,-52,-359"/>
+
+        <Line
+     X1="10" Y1="60"
+     X2="370" Y2="60"
+     Stroke="Red"
+     StrokeThickness="1" Margin="52,408,-52,-408"/>
+
+        <Line
+     X1="10" Y1="60"
+     X2="370" Y2="60"
+     Stroke="Red"
+     StrokeThickness="1" Margin="52,252,-52,-252"/>
+
+        <!-- Vertical lines for expedition guide -->
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="52,304,-52,-304" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="104,304,-104,-304" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="147,304,-147,-304" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="193,304,-193,-304" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="238,304,-238,-304" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="283,304,-283,-304" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="327,304,-327,-304" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="371,304,-371,-304" />
+        
 
     </Grid>
 </Page>
