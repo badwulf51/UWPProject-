@@ -28,5 +28,81 @@
     <LineBreak />
     <Run Text="Allies: Plague Doctor, Bounty Hunter, Occultist, Arbalest " />
         </TextBlock>
+       
+        <!-- horizontal lines for expedition guide -->
+        <Line
+     X1="10" Y1="60"
+     X2="370" Y2="60"
+     Stroke="Red"
+     StrokeThickness="1" Margin="52,300,-52,-300"/>
+
+        <Line
+     X1="10" Y1="60"
+     X2="370" Y2="60"
+     Stroke="Red"
+     StrokeThickness="1" Margin="52,355,-52,-355"/>
+
+        <Line
+     X1="10" Y1="60"
+     X2="370" Y2="60"
+     Stroke="Red"
+     StrokeThickness="1" Margin="52,404,-52,-404"/>
+
+        <Line
+     X1="10" Y1="60"
+     X2="370" Y2="60"
+     Stroke="Red"
+     StrokeThickness="1" Margin="52,252,-52,-252"/>
+
+        <!-- Vertical lines for expedition guide -->
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="52,300,-52,-300" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="104,300,-104,-300" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="147,300,-147,-300" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="193,300,-193,-300" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="238,300,-238,-300" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="283,300,-283,-300" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="327,300,-327,-300" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="371,300,-371,-300" />
+       
+       
     </Grid>
 </Page>
