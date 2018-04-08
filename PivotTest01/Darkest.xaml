@@ -28,6 +28,81 @@
     <LineBreak />
     <Run Text="Allies: Crusader, Hound Master, Occultist, Grave Robber " />
         </TextBlock>
+        
+        <!-- horizontal lines for expedition guide -->
+        <Line
+     X1="10" Y1="60"
+     X2="370" Y2="60"
+     Stroke="Red"
+     StrokeThickness="1" Margin="52,280,-52,-280"/>
+
+        <Line
+     X1="10" Y1="60"
+     X2="370" Y2="60"
+     Stroke="Red"
+     StrokeThickness="1" Margin="52,335,-52,-335"/>
+
+        <Line
+     X1="10" Y1="60"
+     X2="370" Y2="60"
+     Stroke="Red"
+     StrokeThickness="1" Margin="52,384,-52,-384"/>
+
+        <Line
+     X1="10" Y1="60"
+     X2="370" Y2="60"
+     Stroke="Red"
+     StrokeThickness="1" Margin="52,231,-52,-231"/>
+
+        <!-- Vertical lines for expedition guide -->
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="52,280,-52,-280" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="104,280,-104,-280" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="147,280,-147,-280" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="193,280,-193,-280" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="238,280,-238,-280" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="283,280,-283,-280" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="327,280,-327,-280" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="369,280,-314,-280" />
+        
 
     </Grid>
 </Page>
