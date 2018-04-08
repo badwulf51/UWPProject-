@@ -20,11 +20,14 @@ namespace PivotTest01
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+     public sealed partial class MainPage : Page
     {
+        MediaPlayer player;
         public MainPage()
         {
+            // intialized media player to play ancestor qutoes when areas are selected
             this.InitializeComponent();
+            player = new MediaPlayer(); 
 
             result.Text = 0.ToString();
         }
@@ -32,9 +35,76 @@ namespace PivotTest01
         // PAGE NAVIGATION START =======================================================
 
         // Button brings you to the "Cove" XAML page
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private async void Button_Click(object sender, RoutedEventArgs e)
         {
+            // gets assets folder where media is installed 
+            Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync(@"Assets");
+            // the name of the sound file you want played that corresponds to the selected area
+            Windows.Storage.StorageFile file = await folder.GetFileAsync("Narration_cove_cleanse.wav");
+            // turns off autoplay
+            player.AutoPlay = false;
+            player.Source = MediaSource.CreateFromStorageFile(file);
+            // plays wav file, mp3 can used as well 
+            player.Play();
+            // navigates to the cove page
             this.Frame.Navigate(typeof(Cove));
+        }
+        // same as above, except navigates to ruins page
+        // sound wave is also different 
+        private async void Button_Click2(object sender, RoutedEventArgs e)
+        {
+            Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync(@"Assets");
+            Windows.Storage.StorageFile file = await folder.GetFileAsync("Narration_ruins_cleanse.wav");
+
+            player.AutoPlay = false;
+            player.Source = MediaSource.CreateFromStorageFile(file);
+
+            player.Play();
+
+
+            this.Frame.Navigate(typeof(TheRuins));
+        }
+        // navs to weald, plays weald realated sound fx
+        private async void Button_Click3(object sender, RoutedEventArgs e)
+        {
+            Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync(@"Assets");
+            Windows.Storage.StorageFile file = await folder.GetFileAsync("Narration_weald_cleanse.wav");
+
+            player.AutoPlay = false;
+            player.Source = MediaSource.CreateFromStorageFile(file);
+
+            player.Play();
+
+
+            this.Frame.Navigate(typeof(Weald));
+        }
+
+        private async void Button_Click4(object sender, RoutedEventArgs e)
+        {
+            Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync(@"Assets");
+            Windows.Storage.StorageFile file = await folder.GetFileAsync("Narration_warrens_cleanse.wav");
+
+            player.AutoPlay = false;
+            player.Source = MediaSource.CreateFromStorageFile(file);
+
+            player.Play();
+
+
+            this.Frame.Navigate(typeof(Warrens));
+        }
+
+        private async void Button_Click5(object sender, RoutedEventArgs e)
+        {
+            Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync(@"Assets");
+            Windows.Storage.StorageFile file = await folder.GetFileAsync("Narration_bad_darkest_boss_04.wav");
+
+            player.AutoPlay = false;
+            player.Source = MediaSource.CreateFromStorageFile(file);
+
+            player.Play();
+
+
+            this.Frame.Navigate(typeof(Darkest));
         }
 
 
@@ -42,6 +112,7 @@ namespace PivotTest01
 
 
         // PAGE NAVIGATION END ===========================================================================
+
 
         
 
