@@ -28,5 +28,81 @@
     <LineBreak />
     <Run Text="Allies: Jester, Bounty Hunter, Vestal, Highwayman " />
         </TextBlock>
+        
+        <!-- horizontal lines for expedition guide -->
+        <Line
+     X1="10" Y1="60"
+     X2="370" Y2="60"
+     Stroke="Red"
+     StrokeThickness="1" Margin="52,316,-52,-316"/>
+
+        <Line
+     X1="10" Y1="60"
+     X2="370" Y2="60"
+     Stroke="Red"
+     StrokeThickness="1" Margin="52,371,-52,-371"/>
+
+        <Line
+     X1="10" Y1="60"
+     X2="370" Y2="60"
+     Stroke="Red"
+     StrokeThickness="1" Margin="52,420,-52,-420"/>
+
+        <Line
+     X1="10" Y1="60"
+     X2="370" Y2="60"
+     Stroke="Red"
+     StrokeThickness="1" Margin="52,266,-52,-266"/>
+
+        <!-- Vertical lines for expedition guide -->
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="52,316,-52,-316" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="104,316,-104,-316" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="147,316,-147,-316" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="193,316,-193,-316" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="238,316,-238,-316" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="283,316,-283,-316" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="327,316,-327,-316" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="371,316,-371,-316" />
+        
+        
     </Grid>
 </Page>
