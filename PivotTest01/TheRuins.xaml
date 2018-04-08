@@ -31,7 +31,83 @@
     <Run Text="Allies: Crusader, Vestal, Plague Doctor, Bounty Hunter " />
         </TextBlock>
 
+    <!-- horizontal lines for expedition guide -->
+        <Line
+     X1="10" Y1="60"
+     X2="370" Y2="60"
+     Stroke="Red"
+     StrokeThickness="1" Margin="52,302,-52,-302"/>
 
+        <Line
+     X1="10" Y1="60"
+     X2="370" Y2="60"
+     Stroke="Red"
+     StrokeThickness="1" Margin="52,357,-52,-357"/>
+
+        <Line
+     X1="10" Y1="60"
+     X2="370" Y2="60"
+     Stroke="Red"
+     StrokeThickness="1" Margin="52,406,-52,-406"/>
+
+        <Line
+     X1="10" Y1="60"
+     X2="370" Y2="60"
+     Stroke="Red"
+     StrokeThickness="1" Margin="52,252,-52,-252"/>
+
+
+
+
+
+        <!-- Vertical lines for expedition guide -->
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="52,302,-52,-302" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="104,302,-104,-302" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="147,302,-147,-302" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="193,302,-193,-302" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="238,302,-238,-302" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="283,302,-283,-302" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="327,302,-327,-302" />
+
+        <Line
+    X1="50" Y1="10"
+    X2="50" Y2="165"
+    Stroke="Red"
+    StrokeThickness="1" Margin="369,302,-369,-302" />
 
 
     </Grid>
