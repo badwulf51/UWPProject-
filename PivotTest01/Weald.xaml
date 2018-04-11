@@ -1,4 +1,4 @@
-﻿<Page
+<Page
     x:Class="PivotTest01.Weald"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -28,7 +28,8 @@
     <LineBreak />
     <Run Text="Allies: Jester, Bounty Hunter, Vestal, Highwayman " />
         </TextBlock>
-        
+
+
         <!-- horizontal lines for expedition guide -->
         <Line
      X1="10" Y1="60"
@@ -102,7 +103,56 @@
     X2="50" Y2="165"
     Stroke="Red"
     StrokeThickness="1" Margin="371,316,-371,-316" />
-        
-        
+
+
+        <Image  Source="Assets/Food.png" Margin="62,129,0,488" HorizontalAlignment="Left" Width="47"/>
+        <Image  Source="Assets/Bandage.png" Margin="109,129,0,488" HorizontalAlignment="Left" Width="47"/>
+        <Image  Source="Assets/Anti.png" Margin="154,129,0,488" HorizontalAlignment="Left" Width="47"/>
+        <Image  Source="Assets/Shovel.png" Margin="199,129,0,488" HorizontalAlignment="Left" Width="47"/>
+        <Image  Source="Assets/Herbs.png" Margin="244,129,0,488" HorizontalAlignment="Left" Width="47"/>
+        <Image  Source="Assets/Key.png" Margin="289,129,0,488" HorizontalAlignment="Left" Width="47"/>
+        <Image  Source="Assets/Torch.png" Margin="334,129,0,488" HorizontalAlignment="Left" Width="47"/>
+        <Image  Source="Assets/Holy.png" Margin="377,129,0,488" HorizontalAlignment="Left" Width="47"/>
+
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="0,326,0,0" TextWrapping="Wrap" Text="Short Run" VerticalAlignment="Top" Width="64"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="0,378,0,0" TextWrapping="Wrap" Text="Med Run" VerticalAlignment="Top" Width="51"/>
+        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Margin="0,430,0,0" TextWrapping="Wrap" Text="Long Run" VerticalAlignment="Top" Width="64"/>
+
+        <TextBlock x:Name="foodShort" HorizontalAlignment="Left" Margin="69,326,0,0" TextWrapping="Wrap" Text="8-12" VerticalAlignment="Top" Width="38" Height="36"/>
+        <TextBlock x:Name="bandShort" HorizontalAlignment="Left" Margin="109,326,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="35" Height="36"/>
+        <TextBlock x:Name="AntiShort" HorizontalAlignment="Left" Margin="154,326,0,0" TextWrapping="Wrap" Text="2-3" VerticalAlignment="Top" Width="35" Height="36"/>
+        <TextBlock x:Name="shovShort" HorizontalAlignment="Left" Margin="199,326,0,0" TextWrapping="Wrap" Text="3-4" VerticalAlignment="Top" Width="35" Height="36"/>
+        <TextBlock x:Name="herbShort" HorizontalAlignment="Left" Margin="244,326,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="35" Height="36"/>
+        <TextBlock x:Name="keyShort" HorizontalAlignment="Left" Margin="289,326,0,0" TextWrapping="Wrap" Text="1-2" VerticalAlignment="Top" Width="35" Height="36"/>
+        <TextBlock x:Name="torchShort" HorizontalAlignment="Left" Margin="334,326,0,0" TextWrapping="Wrap" Text="8" VerticalAlignment="Top" Width="35" Height="36"/>
+        <TextBlock x:Name="holyShort" HorizontalAlignment="Left" Margin="377,326,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="35" Height="36"/>
+
+
+        <TextBlock x:Name="foodMed" HorizontalAlignment="Left" Margin="64,378,0,0" TextWrapping="Wrap" Text="16-20" VerticalAlignment="Top" Width="40" Height="36"/>
+        <TextBlock x:Name="bandMed" HorizontalAlignment="Left" Margin="109,378,0,0" TextWrapping="Wrap" Text="3" VerticalAlignment="Top" Width="35" Height="36"/>
+        <TextBlock x:Name="antiMed" HorizontalAlignment="Left" Margin="154,378,0,0" TextWrapping="Wrap" Text="3-4" VerticalAlignment="Top" Width="35" Height="36"/>
+        <TextBlock x:Name="shovMed" HorizontalAlignment="Left" Margin="199,378,0,0" TextWrapping="Wrap" Text="4-5" VerticalAlignment="Top" Width="35" Height="36"/>
+        <TextBlock x:Name="herbMed" HorizontalAlignment="Left" Margin="244,378,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="35" Height="36"/>
+        <TextBlock x:Name="keyMed" HorizontalAlignment="Left" Margin="289,378,0,0" TextWrapping="Wrap" Text="2-3" VerticalAlignment="Top" Width="35" Height="36"/>
+        <TextBlock x:Name="torchMed" HorizontalAlignment="Left" Margin="334,378,0,0" TextWrapping="Wrap" Text="12" VerticalAlignment="Top" Width="35" Height="36"/>
+        <TextBlock x:Name="holyMed" HorizontalAlignment="Left" Margin="377,378,0,0" TextWrapping="Wrap" Text="1-2" VerticalAlignment="Top" Width="35" Height="36"/>
+
+        <TextBlock x:Name="foodLong" HorizontalAlignment="Left" Margin="64,430,0,0" TextWrapping="Wrap" Text="20-24" VerticalAlignment="Top" Width="40" Height="36"/>
+        <TextBlock x:Name="bandLong" HorizontalAlignment="Left" Margin="109,430,0,0" TextWrapping="Wrap" Text="4" VerticalAlignment="Top" Width="35" Height="36"/>
+        <TextBlock x:Name="antiLong" HorizontalAlignment="Left" Margin="154,430,0,0" TextWrapping="Wrap" Text="4-5" VerticalAlignment="Top" Width="35" Height="36"/>
+        <TextBlock x:Name="shovLong" HorizontalAlignment="Left" Margin="199,430,0,0" TextWrapping="Wrap" Text="4-6" VerticalAlignment="Top" Width="35" Height="36"/>
+        <TextBlock x:Name="herbLong" HorizontalAlignment="Left" Margin="244,430,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="35" Height="36"/>
+        <TextBlock x:Name="keyLong" HorizontalAlignment="Left" Margin="289,430,0,0" TextWrapping="Wrap" Text="2-4" VerticalAlignment="Top" Width="35" Height="36"/>
+        <TextBlock x:Name="torchLong" HorizontalAlignment="Left" Margin="334,430,0,0" TextWrapping="Wrap" Text="16" VerticalAlignment="Top" Width="35" Height="36"/>
+        <TextBlock x:Name="holyLong" HorizontalAlignment="Left" Margin="377,430,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="35" Height="36"/>
+
+
+
+
+
+
+
+
+
     </Grid>
 </Page>
