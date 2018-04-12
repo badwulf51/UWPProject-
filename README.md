@@ -40,7 +40,19 @@ Without it I would of got no where.
 
 ```
 1.) The first step required was that I needed to register as dev for microsoft, the process took about 20 mins-30mins for sign up and about 8 hours for my account to be offcially verified. My college provided keys that allowed people to access dev accounts for free but for some strange reason the system was telling me my key was already verified (It wasn't, the day I recieved the key was also apperently the day I used it, which did not make sense). After NUMEROUS attempts to contact microsoft and find out the problem I was left with vague emails telling me to contact other people who would then in turn tell me to contact the original person who sent me to them. Figuring I was wasting valuable time I decided to just man up and pay the 19 euro asked. 
-2.) The next step was to register the name of my app
+2.) The next step was to register the name of my app, windows will tell you if an app name is already being used so after much thinking I decided to go with the name "Darkest Survivor"
+3.) Once you have a name reserved you have options to add details to your app and tell microsoft what its about
+4.) After information has been provided you then need to add your app package, this can be done with visual studio by selecting "Project, store, create app packages"
+5.) Before the packages are created you will be asked to sign into your microsoft account 
+6.) Select your apps reserved name
+7.) Choose to create your app packages
+8.) After this I needed to pass a brief "App certification test" the test took roughly around 15 minutes and I passed it first time 
+9.) next I needed to drag my packages into the box on the store, this took about 10 minutes to upload, no problems so far. 
+10.) Once the packages were uploaded i was brought to a screen that stated my app was going through the "pre processing stage" (see image: Cert part 1)
+11.) At this stage all I could do was wait, pre processing took maybe about a day at most 
+12.) After this stage was passed I then needed to pass the "certification" test (see image: Cert part 2) this process took roughly 5 days of waiting. But, after the five days the app passed! 
+13.) Now all I needed to do was wait for microsoft to publich the app (see image: App published), publishing took maybe 2 days at most. 
+14.) App is now avalible to download to windows devices on the store. (see image: on the store). Unfortunatly my app icon was shrunk even though Im nearly positive that the correct app image dimensions were supplied but I wasn't going to complain. 
 ```
 
 ### Installing
