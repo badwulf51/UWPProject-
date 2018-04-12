@@ -26,7 +26,21 @@ before with a coding language so for the time I decided to just leave it as it i
 8.) To do this I desigined my own table using lines, textboxes and images from the game itself. This took me a lot of time and patience
 as the guide lines would constantly mess up and things would look out of place. 
 9.) With the table done for one area, I copied and pasted it to the other pages (no values were outputted into the table at this point)
+10.) next up I outputted the reccomended item values to each area and each area length, table showed a little bit of resistence, but I was able to work around it quite well. 
+11.) I decided to finally learn the calculator provided by docs and understand it, this took a bit of getting used to as I had no experience with trees before. 
+12.) After doing some study online (and some testing via taking out lines and adding them back in) I was fimilar with what I was working with and was able to implement my own calculator idea into it. 
+13.) After the calculator was done I added design to it as well as item pictures that correspond to each different loot amount. 
+14.) With the main bulk of the app completed I needed to add some more stuff to it, since one of DD's greatest achievments is its haunting sound track accompnied by annoucer like lines from your falled ancestor I saw it fitting to add a qutoe from the man himself that corresponds to each area in the game. This was achieved rather easily. 
+15.) After adding sound to each area I then added tips for each area, what you should look out for as well as what team of 4 heroes would be best suited for the area. 
+```
 
+Next onto the hard part, submission to the windows store. This isnt as hard as I made it out to be but due to some....complications I found it more difficult then it had to be. Thanks to help from the author of this link: https://jeremylindsayni.wordpress.com/2016/04/13/how-to-submit-a-uwp-app-to-the-windows-store/
+
+Without it I would of got no where. 
+
+```
+1.) The first step required was that I needed to register as dev for microsoft, the process took about 20 mins-30mins for sign up and about 8 hours for my account to be offcially verified. My college provided keys that allowed people to access dev accounts for free but for some strange reason the system was telling me my key was already verified (It wasn't, the day I recieved the key was also apperently the day I used it, which did not make sense). After NUMEROUS attempts to contact microsoft and find out the problem I was left with vague emails telling me to contact other people who would then in turn tell me to contact the original person who sent me to them. Figuring I was wasting valuable time I decided to just man up and pay the 19 euro asked. 
+2.) The next step was to register the name of my app
 ```
 
 ### Installing
