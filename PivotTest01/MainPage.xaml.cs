@@ -12,6 +12,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.Media.Playback;
+using Windows.Media.Core;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -20,7 +22,7 @@ namespace PivotTest01
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-     public sealed partial class MainPage : Page
+    public sealed partial class MainPage : Page
     {
         MediaPlayer player;
         public MainPage()
@@ -114,7 +116,6 @@ namespace PivotTest01
         // PAGE NAVIGATION END ===========================================================================
 
 
-        
 
 
 
@@ -140,8 +141,13 @@ namespace PivotTest01
             }
         }  // End Add Number
 
+        // selects which calc function to use
+        // originally this was set up with help from microsoft docs to be like a simple calculator
+        // included division and subtraction options as well as multiple 
+        // they have been removed and calculator has been modified to add up selected expedition items 
 
-        enum Operation { MINUS = 1, PLUS = 2, DIV = 3, TIMES = 4, NUMBER = 5 }
+        // The selected operation will added to the result inputed 
+        enum Operation {PLUS = 2, NUMBER = 5 }
         private void AddOperationToResult(Operation operation)
         {
             if (result.Text.Length == 1 && result.Text == "0") return;
@@ -153,10 +159,10 @@ namespace PivotTest01
 
             switch (operation)
             {
-                case Operation.MINUS: result.Text += "-"; break;
+                
                 case Operation.PLUS: result.Text += "+"; break;
-                case Operation.DIV: result.Text += "/"; break;
-                case Operation.TIMES: result.Text += "x"; break;
+                
+                
             }
         } // End Func
 
@@ -212,23 +218,20 @@ namespace PivotTest01
         }
 
 
-        private void btnMinus_Click(object sender, RoutedEventArgs e)
-        {
-            AddOperationToResult(Operation.MINUS);
-        }
-
+       
+        // Tree 
         #region Equal
         private class Operand
         {
             public Operation operation = Operation.NUMBER; // default
             public double value = 0;
-
+            // left and right part are left null till number is added
             public Operand left = null;
             public Operand right = null;
         }
 
 
-        // Get expression from result.Text and build a tree with it!
+        // Get expression from result.Text and build a tree with it
         private Operand BuildTreeOperand()
         {
             Operand tree = null;
@@ -251,13 +254,12 @@ namespace PivotTest01
                     AddOperandToTree(ref tree, new Operand() { value = double.Parse(numberStr) });
                     numberStr = string.Empty;
 
-                    Operation op = Operation.MINUS; // default
+                    Operation op = Operation.PLUS; // default
                     switch (c)
                     {
-                        case '-': op = Operation.MINUS; break;
+                        
                         case '+': op = Operation.PLUS; break;
-                        case '/': op = Operation.DIV; break;
-                        case 'x': op = Operation.TIMES; break;
+                       
                     }
                     AddOperandToTree(ref tree, new Operand() { operation = op });
                 }
@@ -268,7 +270,8 @@ namespace PivotTest01
             return tree;
         }
 
-
+        // Function for adding the selected operand to the tree 
+        
         private void AddOperandToTree(ref Operand tree, Operand elem)
         {
             if (tree == null)
@@ -290,7 +293,11 @@ namespace PivotTest01
             }
         }
 
-
+        // function for calculation 
+        // takes number on left and right of tree 
+        //adds them 
+        // originally took numbers and multiplied, subtracted or divded them 
+        // now just adds 
 
         private double Calc(Operand tree)
         {
@@ -303,17 +310,17 @@ namespace PivotTest01
                 double subResult = 0;
                 switch (tree.operation)
                 {
-                    case Operation.MINUS: subResult = Calc(tree.left) - Calc(tree.right); break; // recursive
-                    case Operation.PLUS: subResult = Calc(tree.left) + Calc(tree.right); break;
-                    case Operation.DIV: subResult = Calc(tree.left) / Calc(tree.right); break;
-                    case Operation.TIMES: subResult = Calc(tree.left) * Calc(tree.right); break;
+                    // takes tree left result and adds tree right result onto it 
+                    case Operation.PLUS: subResult = Calc(tree.left) + Calc(tree.right); break; // Recursive
+                    
                 }
                 return subResult;
             }
         }
 
 
-
+        // function for = button 
+        // sends final result to the text box where numbers are added 
         private void btnEqual_Click(object sender, RoutedEventArgs e)
         {
             // GATE
@@ -327,16 +334,21 @@ namespace PivotTest01
         }
 
         #endregion Equal
-
+        // button for clearing the textbox
         private void btnClear_Click(object sender, RoutedEventArgs e)
         {
             result.Text = 0.ToString();
         }
 
-
+        // button for adding numbers together 
         private void btnPlus_Click(object sender, RoutedEventArgs e)
         {
             AddOperationToResult(Operation.PLUS);
+        }
+        
+        private void button_Click_1(object sender, RoutedEventArgs e)
+        {
+
         }
 
 
