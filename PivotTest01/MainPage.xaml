@@ -1,4 +1,4 @@
-﻿<Page
+<Page
     x:Class="PivotTest01.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -7,9 +7,9 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="White">
         <Pivot Title="Darkest Dungeon" Margin="0,-4,0,0">
-            <PivotItem Header="Expedition Guide">
+            <PivotItem Header="Expedition Guide" Background="#FF1F1D1D">
                 <StackPanel Margin="5">
                     <!-- Button for the cove -->
                     <Button Click="Button_Click" HorizontalAlignment="Left" Margin="1.307,34.985,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.121,-2.807" Height="65.328" UseLayoutRounding="False" Width="155.085" d:LayoutRounding="Auto">
@@ -35,7 +35,7 @@
                     <!-- Button for the weald -->
                     <Button  Click="Button_Click3" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="53" RenderTransformOrigin="0.498,-0.855" Width="155" >
                         <Image Source="Assets/Weald.png" Stretch="UniformToFill" Margin="-10,-6,-9.956,-5.672"/>
-                        
+
                     </Button>
 
                     <!-- Ancestor qutoe for the Weald -->
@@ -67,30 +67,59 @@
                 </StackPanel>
 
             </PivotItem>
+
+
             <PivotItem Header="Hamlet Profit">
-                <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-                    <TextBlock HorizontalAlignment="Left" Margin="120,50,0,0" TextWrapping="Wrap" Text="Packs laden with loot are often low on supplies." VerticalAlignment="Top"/>
+                <Grid>
+                    <Grid.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="Black"/>
+                            <GradientStop Color="White" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Grid.Background>
+                    <!-- Ancestor quote for the calculator function  -->
+                    <TextBlock HorizontalAlignment="Left" Margin="25,48,0,0" TextWrapping="Wrap" Text="Packs laden with loot are often low on supplies." VerticalAlignment="Top" Foreground="#FFDE1414"/>
                     <TextBox 
                      IsReadOnly="True"
                      x:Name="result" HorizontalAlignment="Left" Margin="10,75,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="340"/>
-
-                    <Button Click="btn7_Click" x:Name="btn7" Content="Torch" HorizontalAlignment="Left" Margin="78,115,0,0" VerticalAlignment="Top" Width="42"/>
-                    <Button Click="btn8_Click" x:Name="btn8" Content="Food" HorizontalAlignment="Left" Margin="125,115,0,0" VerticalAlignment="Top" Width="42"/>
-                    <Button Click="btn9_Click" x:Name="btn9" Content="Bandages" HorizontalAlignment="Left" Margin="172,115,0,0" VerticalAlignment="Top" Width="42"/>
-                    <Button Click="btn4_Click" x:Name="btn4" Content="Anti-V" HorizontalAlignment="Left" Margin="78,152,0,0" VerticalAlignment="Top" Width="42"/>
-                    <Button Click="btn5_Click" x:Name="btn5" Content="Herbs" HorizontalAlignment="Left" Margin="125,152,0,0" VerticalAlignment="Top" Width="42"/>
-                    <Button Click="btn6_Click" x:Name="btn6" Content="Key" HorizontalAlignment="Left" Margin="172,152,0,0" VerticalAlignment="Top" Width="42"/>
-                    <Button Click="btn1_Click" x:Name="btn1" Content="Holy" HorizontalAlignment="Left" Margin="78,189,0,0" VerticalAlignment="Top" Width="42"/>
-                    <Button Click="btn2_Click" x:Name="btn2" Content="Shovel" HorizontalAlignment="Left" Margin="125,189,0,0" VerticalAlignment="Top" Width="42"/>
-                    <Button Click="btnMinus_Click" x:Name="btnMinus" Content="-" HorizontalAlignment="Left" Margin="219,189,0,0" VerticalAlignment="Top" Width="42"/>
+                    <!-- this button contains the value for torch loot -->
+                    <Button Click="btn7_Click" x:Name="btn7"  HorizontalAlignment="Left" Margin="78,115,0,0" VerticalAlignment="Top" Width="42" Height="32" RequestedTheme="Default" Background="#33000000" >
+                        <Image Source="Assets/Torch.png" Stretch="Fill" Margin="-10,-6,-10,-6" />
+                    </Button>
+                    <!-- this button contains the value for food loot -->
+                    <Button Click="btn8_Click" x:Name="btn8"  HorizontalAlignment="Left" Margin="125,115,0,0" VerticalAlignment="Top" Width="42" Height="32" >
+                        <Image Source="Assets/Food.png" Stretch="Fill" Margin="-10,-6,-10,-6" />
+                    </Button>
+                    <!-- this button contains the value for bandage loot -->
+                    <Button Click="btn9_Click" x:Name="btn9" HorizontalAlignment="Left" Margin="172,115,0,0" VerticalAlignment="Top" Width="42" Height="32" >
+                        <Image Source="Assets/Bandage.png" Stretch="Fill" Margin="-10,-6,-10,-6" />
+                    </Button>
+                    <!-- this button contains the value for anti venom loot -->
+                    <Button Click="btn4_Click" x:Name="btn4" HorizontalAlignment="Left" Margin="78,152,0,0" VerticalAlignment="Top" Width="42" Height="32" >
+                        <Image Source="Assets/Anti.png" Stretch="Fill" Margin="-10,-6,-10,-6" />
+                    </Button>
+                    <!-- this button contains the value for herb loot -->
+                    <Button Click="btn5_Click" x:Name="btn5"  HorizontalAlignment="Left" Margin="125,152,0,0" VerticalAlignment="Top" Width="42" Height="32" >
+                        <Image Source="Assets/Herbs.png" Stretch="Fill" Margin="-10,-6,-10,-6" />
+                    </Button>
+                    <!-- this button contains the value for skeleton key loot -->
+                    <Button Click="btn6_Click" x:Name="btn6" HorizontalAlignment="Left" Margin="172,152,0,0" VerticalAlignment="Top" Width="42" Height="32" >
+                        <Image Source="Assets/Key.png" Stretch="Fill" Margin="-10,-6,-10,-6" />
+                    </Button>
+                    <!-- this button contains the value for holy water loot -->
+                    <Button Click="btn1_Click" x:Name="btn1" HorizontalAlignment="Left" Margin="78,189,0,0" VerticalAlignment="Top" Width="42" Height="32" >
+                        <Image Source="Assets/Holy.png" Stretch="Fill" Margin="-10,-6,-10,-6" />
+                    </Button>
+                    <!-- this button contains the value for shovel loot -->
+                    <Button Click="btn2_Click" x:Name="btn2" HorizontalAlignment="Left" Margin="125,189,0,0" VerticalAlignment="Top" Width="42" Height="32" >
+                        <Image Source="Assets/Shovel.png" Stretch="Fill" Margin="-10,-6,-10,-6" />
+                    </Button>
+                    <!-- button for displaying profit total -->
                     <Button Click="btnEqual_Click" x:Name="btnEqual" Content="=" HorizontalAlignment="Left" Margin="78,226,0,0" VerticalAlignment="Top" Width="42"/>
+                    <!-- button for clearing the textbox -->
                     <Button Click="btnClear_Click" x:Name="btnClear" Content="C" HorizontalAlignment="Left" Margin="172,226,0,0" VerticalAlignment="Top" Width="42"/>
-                    <Button Click="btnPlus_Click" x:Name="btnPlus" Content="+" HorizontalAlignment="Left" Margin="219,226,0,0" VerticalAlignment="Top" Width="42"/>
-                    
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="300"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
+                    <!-- button for adding total profits -->
+                    <Button Click="btnPlus_Click" x:Name="btnPlus" Content="+" HorizontalAlignment="Left" Margin="172,189,0,0" VerticalAlignment="Top" Width="42"/>
 
                 </Grid>
 
